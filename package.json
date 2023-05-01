@@ -17,7 +17,7 @@
     "@strapi/strapi": "4.9.0",
     "openai": "^3.2.1",
     "pg": "8.8.0",
-    "strapi-plugin-graphs-builder": "^1.0.0",
+    "strapi-plugin-vercel-deploy": "^1.4.0",
     "stripe": "^12.1.1"
   },
   "author": {
