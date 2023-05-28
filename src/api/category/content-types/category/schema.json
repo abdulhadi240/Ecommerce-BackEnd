@@ -4,7 +4,7 @@
   "info": {
     "singularName": "category",
     "pluralName": "categories",
-    "displayName": "category",
+    "displayName": "MasCategory",
     "description": ""
   },
   "options": {
@@ -26,22 +26,11 @@
       "target": "api::product.product",
       "mappedBy": "categories"
     },
-    "Title": {
-      "type": "string"
-    },
-    "Description": {
-      "type": "text"
-    },
-    "image": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+    "sub_categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::sub-category.sub-category",
+      "mappedBy": "category"
     }
   }
 }

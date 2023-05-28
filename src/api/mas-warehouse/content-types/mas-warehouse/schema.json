@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mas_warehouses",
+  "info": {
+    "singularName": "mas-warehouse",
+    "pluralName": "mas-warehouses",
+    "displayName": "masWarehouse"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Address": {
+      "type": "string"
+    },
+    "Longitute": {
+      "type": "float"
+    },
+    "Latitute": {
+      "type": "float"
+    }
+  }
+}

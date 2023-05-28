@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mas_unit_of_measurments",
+  "info": {
+    "singularName": "mas-unit-of-measurment",
+    "pluralName": "mas-unit-of-measurments",
+    "displayName": "MasUnitOfMeasurment",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "mas_unit_of_measurment"
+    },
+    "Calculated_Feild": {
+      "type": "float"
+    }
+  }
+}

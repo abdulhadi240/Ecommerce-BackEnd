@@ -45,7 +45,7 @@
         "images"
       ]
     },
-    "orignal_price": {
+    "Cost_Price": {
       "type": "decimal"
     },
     "slug": {
@@ -58,16 +58,29 @@
       "target": "api::category.category",
       "inversedBy": "products"
     },
-    "Stock": {
-      "type": "boolean",
-      "default": false,
-      "required": true
-    },
     "Featured": {
       "type": "string"
     },
-    "StockNumber": {
+    "MinStock": {
       "type": "integer"
+    },
+    "sub_category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::sub-category.sub-category",
+      "inversedBy": "products"
+    },
+    "mas_unit_of_measurment": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::mas-unit-of-measurment.mas-unit-of-measurment",
+      "inversedBy": "products"
+    },
+    "MaxStock": {
+      "type": "integer"
+    },
+    "Remarks": {
+      "type": "text"
     }
   }
 }
