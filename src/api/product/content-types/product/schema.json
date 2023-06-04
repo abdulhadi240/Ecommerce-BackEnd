@@ -26,9 +26,6 @@
     "description": {
       "type": "richtext"
     },
-    "size": {
-      "type": "json"
-    },
     "image": {
       "type": "media",
       "multiple": true,
@@ -40,7 +37,7 @@
     "thumbnail": {
       "type": "media",
       "multiple": false,
-      "required": true,
+      "required": false,
       "allowedTypes": [
         "images"
       ]
@@ -81,6 +78,12 @@
     },
     "Remarks": {
       "type": "text"
+    },
+    "brand": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::brand.brand",
+      "inversedBy": "products"
     }
   }
 }

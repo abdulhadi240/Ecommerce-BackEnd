@@ -14,7 +14,7 @@
     "@strapi/plugin-i18n": "4.9.0",
     "@strapi/plugin-users-permissions": "4.9.0",
     "@strapi/provider-upload-cloudinary": "4.9.0",
-    "@strapi/strapi": "4.9.0",
+    "@strapi/strapi": "4.10.6",
     "openai": "^3.2.1",
     "pg": "8.8.0",
     "strapi-plugin-vercel-deploy": "^1.4.0",

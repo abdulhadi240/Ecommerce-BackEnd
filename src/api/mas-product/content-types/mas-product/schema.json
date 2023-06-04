@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mas_products",
+  "info": {
+    "singularName": "mas-product",
+    "pluralName": "mas-products",
+    "displayName": "MasProduct"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    }
+  }
+}
